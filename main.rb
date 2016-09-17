@@ -22,4 +22,8 @@ bot.command([:joke, :chuck, :cn, :norris], description: 'displays a random joke 
   "#{jokes.sample.gsub('&quot;', '_')}"
 end
 
+bot.ready do
+  bot.game = "#{jokes.sample.gsub('&quot;', '_')}"
+end
+
 bot.run
