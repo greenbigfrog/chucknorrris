@@ -15,4 +15,3 @@ File.open("jokes.txt", "w") do |f|
     f << "#{x}\n"
   end
 end
-
